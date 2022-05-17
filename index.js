@@ -31,7 +31,7 @@ console.log(uri)
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
-
+// yhis section is for jwt
 function verifyJWT(req, res, next) {
     // console.log('abc')
 
@@ -198,3 +198,4 @@ async function run() {
 }
 
 run().catch(console.dir)
+//---------------------------------------------------
